@@ -19,7 +19,8 @@ git checkout -b H071231nnn # Sesuaikan dengan NIM masing-masing
 ```bash
 cd H071231nnn # Sesuaikan dengan NIM masing-masing
 ```
-7. **Lakukan Perubahan:** Mulai mengedit atau menambahkan berkas (folder maupun file tugas) sesuai dengan instruksi tugas yang diberikan.
+7. **Buat Folder Pertemuan:** Buatlah folder, misal "Pertemuan-1"
+7. **Lakukan Perubahan:** Masuk ke folder "Pertemuan-1", mulai mengedit atau menambahkan berkas (folder maupun file tugas) sesuai dengan instruksi tugas yang diberikan.
 8. **Tambahkan File Tugas:** Setelah selesai melakukan perubahan pada kode, tambahkan file tugas tersebut lalu.
 ```bash
    git add .
