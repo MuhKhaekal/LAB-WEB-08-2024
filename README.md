@@ -19,21 +19,22 @@ git checkout -b H071231nnn # Sesuaikan dengan NIM masing-masing
 ```bash
 cd H071231nnn # Sesuaikan dengan NIM masing-masing
 ```
-7. **Lakukan Perubahan:** Mulai mengedit atau menambahkan berkas (folder maupun file tugas) sesuai dengan instruksi tugas yang diberikan.
-8. **Tambahkan File Tugas:** Setelah selesai melakukan perubahan pada kode, tambahkan file tugas tersebut lalu.
+7. **Buat Folder Pertemuan:** Misal "Pertemuan 1"
+8. **Lakukan Perubahan:** Masuk ke folder "Pertemuan 1". Mulai mengedit atau menambahkan berkas (folder maupun file tugas) sesuai dengan instruksi tugas yang diberikan.
+9. **Tambahkan File Tugas:** Setelah selesai melakukan perubahan pada kode, tambahkan file tugas tersebut lalu.
 ```bash
    git add .
 ```
-9. **Commit Perubahan:** Setelah semua tugas sudah ditambah, commit dengan pesan yang deskriptif.
+10. **Commit Perubahan:** Setelah semua tugas sudah ditambah, commit dengan pesan yang deskriptif.
 ```bash
 git commit -m "Task 1: HTML as Skeleton"  # Sesuaikan pesan dengan tugas yang kamu kumpulkan
 ```
 Note: Untuk cek status file apakah sudah ditambahkan maupun dikomit, bisa dilakukan dengan `git status`
-10. **Push ke GitHub:** Push cabang baru yang telah kamu buat ke repositori GitHub.
+11. **Push ke GitHub:** Push cabang baru yang telah kamu buat ke repositori GitHub.
 ```bash
 git push -u origin H071231nnn # Sesuaikan dengan NIM masing-masing
 ```
-11. **Buka Pull Request:** Di halaman repositori akunmu, akan ada pemberitahuan untuk melakukan Pull Request. Klik tautan tersebut lalu lakukan Pull Request ke repositori utama ini.
+12. **Buka Pull Request:** Di halaman repositori akunmu, akan ada pemberitahuan untuk melakukan Pull Request. Klik tautan tersebut lalu lakukan Pull Request ke repositori utama ini.
 
 ## Tips Tambahan
 - Pastikan untuk memberi nama yang deskriptif pada pesan commit tugas.
