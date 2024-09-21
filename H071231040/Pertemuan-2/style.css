@@ -1,0 +1,342 @@
+@font-face {
+    font-family: 'Pricedown';
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    src: local('pricedown'), url('/MediaSource/Font/pricedown\ bl.otf'), format('opentype');
+}
+
+@font-face {
+    font-family: 'SignPainter HouseScript';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SignPainter HouseScript'), url('/MediaSource/Font/SignPainter\ HouseScript\ Regular.ttf'), format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+/* Style Navbar */
+.navbar {
+    top: 0;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1000;
+}
+
+.navbar-title{
+    font-family: 'Pricedown';
+    font-size: 1.1rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-title img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.navbar-list {
+    display: flex;
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    transition: 0.5s background-color;
+}
+
+.navbar a:hover {
+    background-color: #333;
+}
+
+/* Style Hero Section */
+.hero-section {
+    margin-top: 4.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding: 0;
+    gap: 5rem;
+    height: 90vh;
+    background-image: linear-gradient(to top,
+            rgb(0, 0, 0),
+            rgba(0, 0, 0, 0.4) 15%),
+        url(https://preview.redd.it/why-did-they-change-the-colored-map-to-the-black-and-white-v0-ta2vj4x5q65c1.png?width=1280&format=png&auto=webp&s=5fd620e53c7fc9d5531d48eaad6e3a1744fac50b);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+
+.hero-image {
+    z-index: 2;
+}
+
+.hero-image img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    padding-right: 4rem;
+}
+
+.hero-caption {
+    color: white;
+    font-size: 1.1rem;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 2;
+    text-shadow: 5px 3px 10px black;
+    padding: 3rem;
+
+}
+
+.hero-caption h2 {
+    font-family: 'SignPainter HouseScript';
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-caption p {
+    line-height: 2;
+}
+
+/* Style About Section */
+.about-section {
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 5rem;
+    background: linear-gradient(to bottom, black, #333)15%;
+    color: white;
+}
+
+.about-section h2 {
+    font-family: 'SignPainter HouseScript';
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+    text-shadow: 5px 3px 10px #333;
+}
+
+.about-section p {
+    line-height: 2;
+}
+
+.container-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    flex-direction: row;
+    text-align: justify;
+}
+
+/* Style Gallery Section */
+.gallery-section {
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    /* padding: 1.5rem; */
+}
+
+.gallery-section h2 {
+    font-family: 'SignPainter HouseScript';
+    font-size: 2.5rem;
+    color: white;
+    margin: 0;
+    padding-left: 2rem;
+    text-shadow: 5px 3px 10px black;
+}
+
+.container-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.gallery-item img {
+    height: auto;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.gallery-item {
+    text-align: center;
+    position: relative;
+}
+
+.gallery-item figcaption {
+    font-family: 'Pricedown';
+    color: red;
+    font-size: 1.5rem;
+    position: absolute;
+    width: 100%;
+    bottom: 5.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 0;
+    border-radius: 10px;
+    text-align: center;
+    z-index: -1;
+    transition: all 200ms ease-in-out z-index;
+}
+
+.gallery-item:hover figcaption {
+    z-index: 1;
+    transition: all 200ms ease-in-out z-index;
+}
+
+/* Style Footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    /* height: 10vh; */
+    margin-top: 10vh;
+    gap: 10rem;
+    padding: 1rem;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+}
+
+.footer-contact {
+    align-items: center;
+    text-align: center;
+}
+
+.footer-socialmedia a {
+    text-decoration: none;
+}
+
+.footer-socialmedia img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+
+.footer-socialmedia img:hover {
+    filter: grayscale(0);
+    transition: 0.5s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .hero-image img {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        padding-right: 0;
+    }
+
+    .hero-caption {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .about-section {
+        flex-direction: column;
+        padding: 1rem;;
+    }
+
+    .about-section h2 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .container-about {
+        flex-direction: column;
+    }
+
+    .gallery-section {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .container-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+
+    .gallery-section h2 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .gallery-item figcaption {
+        bottom: 3.5rem;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer-socialmedia {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-socialmedia img {
+        width: 40px;
+        height: 40px;
+    }
+    
+}
