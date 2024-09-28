@@ -1,0 +1,221 @@
+/* Poppins Font */
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.shadows-into-light-regular {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body,
+html {
+  background-color: #d53939;
+}
+
+/* Navbar */
+.navbar {
+  z-index: 80;
+  height: 80px;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar Brand */
+.navbar-brand img {
+  max-width: 200px;
+}
+
+/* Navbar Toggler */
+.navbar-toggler:focus {
+  border: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:hover {
+  color: #ffc107;
+  transition: 0.3s ease-in-out;
+}
+
+.w-15 {
+  max-width: 15rem;
+}
+
+.logo-indomie img {
+  max-width: 200px;
+}
+
+.collapse {
+  height: 80px;
+}
+
+.mt-0-custom {
+  height: 80px;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url(indomie-hero-bg-darkened-20.png);
+  text-shadow: 5px 3px 10px black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.my-5-hero {
+  margin-top: 80px;
+}
+
+.h-80-hero {
+  height: 90vh;
+}
+
+/* About Section */
+
+#about p {
+  text-align: justify;
+}
+
+/* Products Section */
+
+/* Style for product cards */
+.product-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  min-height: 11.9rem; /* Atur sesuai panjang teks produk terpanjang */
+  overflow: hidden;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px; /* Atur sesuai kebutuhan */
+}
+
+/* Footer */
+.footer-icon {
+  margin-right: 8px;
+}
+
+.social-icon {
+  color: black;
+}
+
+.social-icon:hover {
+  color: #dc3545;
+}
+
+@media (min-width: 992px) {
+  /* Membuat ul.navbar-nav menggunakan flexbox secara kolom */
+  .navbar-nav {
+    display: flex;
+    flex-direction: column; /* Mengatur elemen ul untuk diatur secara kolom */
+    justify-content: space-between; /* Membuat item terdistribusi secara vertikal */
+    height: 100%; /* Memenuhi tinggi navbar secara vertikal */
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Membuat setiap nav-item memenuhi ruang secara vertikal */
+  .nav-item {
+    display: flex;
+    align-items: center; /* Memastikan konten di dalam item selaras di tengah secara vertikal */
+    height: 100%; /* Memenuhi ruang secara vertikal */
+  }
+
+  .nav-link {
+    padding: 0.75rem 1rem; /* Sesuaikan padding jika diperlukan */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem; /* Memenuhi lebar container */
+    height: 100%; /* Memenuhi tinggi container */
+    text-decoration: none; /* Menghilangkan underline default */
+  }
+
+  .nav-link:hover {
+    background-color: darkred;
+    transition: 0.8s;
+  }
+
+  .logo-indomie {
+    position: fixed;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-item:hover {
+    background-color: darkred;
+    transition: 0.8s;
+  }
+
+  .p-md-3-custom {
+    padding: 1rem;
+  }
+
+  .w-300px {
+    width: 200px;
+    height: 100vh;
+  }
+
+  .position-absolute-md {
+    margin-top: 80px;
+    position: absolute;
+    top: 0; /* Untuk menjaga navbar tetap di bagian atas */
+    right: -300px; /* Awalnya disembunyikan di luar layar sebelah kanan */
+    transition: right 0.3s ease; /* Transisi untuk animasi */
+  }
+
+  .bg-warning-side {
+    background-color: #ffc107;
+  }
+
+  /* Menampilkan navbar ketika dalam keadaan terbuka */
+  .collapse.show {
+    right: 0; /* Navbar muncul ke dalam layar dari sebelah kanan */
+  }
+
+  /* Navbar keluar lagi ketika collapse disembunyikan */
+  .collapse:not(.show) {
+    right: -300px; /* Navbar kembali keluar ke kanan */
+    transition: right 0.5s ease; /* Transisi untuk animasi keluar */
+  }
+}
