@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let harga = prompt("Masukkan harga barang: ");
+        let jenis = prompt("Masukkan jenis barang (Elektronik, Pakaian, Makanan, Lainnya: ");
+        let harga_akhir;
+        switch (jenis) {
+            case "Elektronik":
+                console.log("Diskon : 10%");
+                harga_akhir = harga - (harga * 0.10);
+                console.log("Harga Setelah Diskon: " + harga_akhir)
+                break;
+            case "Pakaian":
+                console.log("Diskon : 20%");
+                harga_akhir = harga - (harga * 0.20);
+                console.log("Harga Setelah Diskon: " + harga_akhir)
+                break;
+            case "Makanan":
+                console.log("Diskon : 5%");
+                harga_akhir = harga - (harga * 0.05);
+                console.log("Harga Setelah Diskon: " + harga_akhir)
+                break;
+            case "Lainnya":
+                console.log("Diskon : -");
+                harga_akhir = harga;
+                console.log("Harga Setelah Diskon: " + harga_akhir)
+                break;
+            default:
+                console.log("Typo Maszehh..");
+                break;
+        }
+
+    </script>
+</body>
+</html>
