@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('font/Minecrafter.Reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #191b1b;
+    color: #ffffff;
+}
+
+nav {
+    height: 70px;
+    background-color: rgba(39, 36, 36, 0.6); 
+    backdrop-filter: blur(5px); 
+    z-index: 1000;
+}
+
+.nav-item {
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+h1 {
+    align-items: center;
+    margin-left: 40px;
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+form {
+    font-family: 'MyCustomFont', sans-serif;
+    
+}
+
+footer {
+    background-color: #232526;
+    color: white;
+    padding: 20px;
+    margin-top: -50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+.contact-info {
+    /* display: flex; */
+    gap: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 40px;
+}
+.contact-info a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.logo {
+    align-items: center;
+    color: #ffffff;
+}
+
+@media (max-width: 850px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-content,
+    .logo,
+    .contact-info {
+        flex-direction: column;
+        margin: 10px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-content,
+    .logo,
+    .contact-info {
+        flex-direction: column;
+        margin: 10px;
+        justify-content: center;
+    }
+}
