@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Shadow Into Light Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar (start) -->
+    <nav
+      class="navbar navbar-expand-lg bg-danger position-fixed w-100 p-0 m-0 top-0"
+    >
+      <div
+        class="container-fluid p-0"
+        style="
+          display: flex;
+          flex-wrap: inherit;
+          align-items: start;
+          justify-content: space-between;
+          height: 80px;
+        "
+      >
+        <div class="logo-indomie">
+          <img
+            src="https://www.indomie.com/img/icon/logo-indomie.png"
+            alt="Indomie Logo"
+          />
+        </div>
+        <div
+          class="collapse justify-content-lg-center navbar-collapse position-absolute-md p-0"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav w-300px poppins-medium bg-warning-side">
+            <li class="nav-item p-md-3-custom">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item p-md-3-custom">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item p-md-3-custom">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="#products"
+                >Products</a
+              >
+            </li>
+            <li class="nav-item p-md-3-custom">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="#contact"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          class="mt-0-custom pt-0 pe-3 justify-content-center align-content-center"
+        >
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span>
+              <i data-feather="menu" stroke-width="3"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar (end) -->
+
+    <!-- Hero Section (start) -->
+    <section
+      class="hero p-5 my-5-hero text-center h-80-hero align-content-center text-white"
+    >
+      <div class="hero-content">
+        <h1 class="display-5 poppins-bold">Nikmati Keajaiban Rasa Indomie</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4 poppins-regular">
+            Indomie bukan hanya sekadar mi instan, tapi sebuah pengalaman cita
+            rasa yang kaya dan autentik. Dari mi yang kenyal hingga perpaduan
+            bumbu yang menggugah selera, Indomie siap memanjakan lidahmu dengan
+            berbagai varian rasa yang tak terlupakan. Mari eksplorasi kelezatan
+            dalam setiap gigitan!
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="#products">
+              <button
+                type="button"
+                class="btn btn-danger btn-lg px-4 gap-3 poppins-medium"
+              >
+                Coba Sekarang
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section (end) -->
+
+    <!-- About Section (start) -->
+    <section class="container-fluid" style="padding-top: 6rem" id="about">
+      <div class="row text-center mb-5">
+        <div class="col">
+          <h1 class="display-4 shadows-into-light-regular text-white">
+            About Indomie
+          </h1>
+        </div>
+      </div>
+
+      <!-- Sejarah Indomie -->
+      <div class="row align-items-center p-5 pt-0">
+        <div class="col-md-6 order-md-2">
+          <img
+            src="DALL·E 2024-09-27 13.41.17 - A visual representation of the history of Indomie, showing the evolution of Indomie packaging from its early classic desi.webp"
+            alt="Sejarah Indomie"
+            class="img-fluid"
+            style="border-radius: 15px"
+          />
+        </div>
+        <div class="col-md-6 order-md-1">
+          <h3 class="poppins-bold text-white pt-4">
+            Perjalanan Sang Ikon: Dari Nusantara ke Dunia
+          </h3>
+          <p class="poppins-regular text-white">
+            Indomie lahir pada tahun 1972, membawa cita rasa Indonesia ke dalam
+            sebuah bungkus kecil yang mengubah dunia kuliner. Dari rasa "Kaldu
+            Ayam" klasik hingga "Mi Goreng" yang menjadi primadona, Indomie
+            telah menembus batas geografis, menjangkau lebih dari 100 negara.
+          </p>
+          <p class="poppins-regular text-white">
+            Siapa sangka, dari warung-warung di Jakarta hingga dapur-dapur kos
+            di seluruh dunia, Indomie telah menyatukan pecinta kuliner dari
+            berbagai lapisan masyarakat dengan kelezatannya yang tak lekang oleh
+            waktu.
+          </p>
+        </div>
+      </div>
+
+      <!-- Award dan Sertifikasi -->
+      <div class="row align-items-center p-5 bg-warning">
+        <div class="col-md-6">
+          <img
+            src="DALL·E 2024-09-27 13.41.28 - An award ceremony scene showcasing Indomie receiving international accolades and certifications like ISO 9001 and World B.webp"
+            alt="Penghargaan Indomie"
+            class="img-fluid"
+            style="border-radius: 15px"
+          />
+        </div>
+        <div class="col-md-6">
+          <h3 class="poppins-bold text-danger pt-4">
+            Penghargaan dan Sertifikasi: Kualitas yang Diakui Dunia
+          </h3>
+          <p class="poppins-regular text-dark">
+            Kelezatan Indomie tak hanya diakui oleh konsumen, tapi juga berbagai
+            lembaga internasional. Kami bangga telah menerima
+            <span class="poppins-bold text-danger">Top Brand Award</span>
+            selama bertahun-tahun, serta penghargaan dari
+            <span class="poppins-bold text-danger">World Branding Awards</span>
+            untuk kategori produk konsumen terbaik. Kualitas kami dibuktikan
+            melalui sertifikasi ISO 9001 dan ISO 22000 yang memastikan bahwa
+            setiap mi yang Anda nikmati dibuat dengan standar tertinggi.
+          </p>
+          <p class="poppins-regular text-dark">
+            Tak hanya itu, Indomie juga bersertifikat
+            <span class="poppins-bold text-danger">Halal</span>, memastikan
+            produk kami dapat dinikmati oleh semua kalangan, kapan saja dan di
+            mana saja.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mengapa Indomie -->
+      <div class="row align-items-center mb-5 p-5 bg-success">
+        <div class="col-md-6 order-md-2">
+          <img
+            src="DALL·E 2024-09-27 13.41.33 - A delicious and artistic representation of Indomie noodles in a bowl, surrounded by creative and fresh ingredients like f.webp"
+            alt="Kelezatan Indomie"
+            class="img-fluid"
+            style="border-radius: 15px"
+          />
+        </div>
+        <div class="col-md-6 order-md-1">
+          <h3 class="poppins-bold text-white pt-4">
+            Mengapa Indomie? Cinta dalam Setiap Gigitan
+          </h3>
+          <p class="poppins-regular text-white">
+            Indomie bukan hanya soal kenyang. Indomie adalah nostalgia, adalah
+            kebahagiaan, adalah cinta dalam setiap gigitan. Dari varian klasik
+            Mi Goreng hingga kreasi unik yang terus memanjakan lidah, Indomie
+            adalah canvas kuliner yang siap diolah sesuai kreativitas Anda.
+          </p>
+          <p class="poppins-regular text-white">
+            Dari anak kos hingga chef profesional, Indomie selalu ada untuk
+            menemani momen-momen terbaik dalam hidup Anda. Siapa yang bisa
+            menolak kelezatan mi dengan saus gurih yang tiada duanya? Indomie
+            bukan sekadar mi, Indomie adalah pengalaman tak terlupakan.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section (end) -->
+
+    <section
+      class="container-fluid text-center"
+      style="padding-top: 6rem"
+      id="products"
+    >
+      <h1 class="display-4 shadows-into-light-regular text-white">
+        Our Products
+      </h1>
+
+      <div class="container mt-5">
+        <div class="row">
+          <!-- Product 1 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card product-card bg-warning">
+              <img
+                src="https://www.indomie.com/uploads/product/indomie-mi-goreng-special_thumb_094906798.png"
+                class="card-img-top"
+                alt="Product 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title poppins-bold text-dark">
+                  Indomie Mi Goreng
+                </h5>
+                <button
+                  class="btn btn-danger poppins-bold text-white"
+                  onclick="openModal('Indomie Mi Goreng')"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Product 2 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card product-card bg-warning">
+              <img
+                src="https://www.indomie.com/uploads/product/indomie-mi-goreng-hot-spicy_thumb_113950389.png"
+                class="card-img-top"
+                alt="Product 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title poppins-bold">
+                  Indomie Mi Goreng Hot & Spicy
+                </h5>
+                <button
+                  class="btn btn-danger poppins-bold text-white"
+                  onclick="openModal('Indomie Mi Goreng Hot & Spicy')"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card product-card bg-warning">
+              <img
+                src="https://www.indomie.com/uploads/product/indomie-mi-goreng-barbeque-chicken-flavour_thumb_170302372.png"
+                class="card-img-top"
+                alt="Product 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title poppins-bold">
+                  Indomie Mi Goreng Barbeque Chicken Flavour
+                </h5>
+                <button
+                  class="btn btn-danger poppins-bold text-white"
+                  onclick="openModal('Indomie Mi Goreng Barbeque Chicken Flavour')"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card product-card bg-warning">
+              <img
+                src="https://www.indomie.com/uploads/product/indomie-mi-goreng-satay-flavour_thumb_170407982.png"
+                class="card-img-top"
+                alt="Product 4"
+              />
+              <div class="card-body">
+                <h5 class="card-title poppins-bold">
+                  Indomie Mi Goreng Satay Flavour
+                </h5>
+                <button
+                  class="btn btn-danger poppins-bold text-white"
+                  onclick="openModal('Indomie Mi Goreng Satay Flavour')"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card product-card bg-warning">
+              <img
+                src="https://www.indomie.com/uploads/product/indomie-mi-goreng-rendang-flavour_thumb_170333176.png"
+                class="card-img-top"
+                alt="Product 5"
+              />
+              <div class="card-body">
+                <h5 class="card-title poppins-bold">
+                  Indomie Mi Goreng Rendang Flavour
+                </h5>
+                <button
+                  class="btn btn-danger poppins-bold text-white"
+                  onclick="openModal('Indomie Mi Goreng Rendang Flavour')"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card product-card bg-warning">
+              <img
+                src="https://www.indomie.com/uploads/product/indomie-mi-goreng-spicy-beef-ribs-flavour_thumb_151435071.png"
+                class="card-img-top"
+                alt="Product 6"
+              />
+              <div class="card-body">
+                <h5 class="card-title poppins-bold">
+                  Indomie Mi Goreng Iga Penyet Flavour
+                </h5>
+                <button
+                  class="btn btn-danger poppins-bold text-white"
+                  onclick="openModal('Indomie Mi Goreng Iga Penyet Flavour')"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card product-card bg-warning">
+              <img
+                src="https://www.indomie.com/uploads/product/indomie-mi-goreng-cabe-ijo-flavour_thumb_145129182.png"
+                class="card-img-top"
+                alt="Product 6"
+              />
+              <div class="card-body">
+                <h5 class="card-title poppins-bold">
+                  Indomie Mi Goreng Cabe Ijo Flavour
+                </h5>
+                <button
+                  class="btn btn-danger poppins-bold text-white"
+                  onclick="openModal('Indomie Mi Goreng Cabe Ijo Flavour')"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 7 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card product-card bg-warning">
+              <img
+                src="https://www.indomie.com/uploads/product/indomie-special-fried-curly-noodles_thumb_173147107.png"
+                class="card-img-top"
+                alt="Product 7"
+              />
+              <div class="card-body">
+                <h5 class="card-title poppins-bold">
+                  Indomie Special Fried Curly Noodles
+                </h5>
+                <button
+                  class="btn btn-danger poppins-bold text-white"
+                  onclick="openModal('Indomie Special Fried Curly Noodles')"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 8 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card product-card bg-warning">
+              <img
+                src="https://www.indomie.com/uploads/product/indomie-curly-noodle-with-grilled-chicken_thumb_172526973.png"
+                class="card-img-top"
+                alt="Product 8"
+              />
+              <div class="card-body">
+                <h5 class="card-title poppins-bold">
+                  Indomie Curly Noodles BBQ Chicken Flavour
+                </h5>
+                <button
+                  class="btn btn-danger poppins-bold text-white"
+                  onclick="openModal('Indomie Curly Noodles BBQ Chicken Flavour')"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 9 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card product-card bg-warning">
+              <img
+                src="https://www.indomie.com/uploads/product/indomie-mi-goreng-special-5s_thumb_171154909.png"
+                class="card-img-top"
+                alt="Product 9"
+              />
+              <div class="card-body">
+                <h5 class="card-title poppins-bold">Indomie Mi Goreng 5S</h5>
+                <button
+                  class="btn btn-danger poppins-bold text-white"
+                  onclick="openModal('Indomie Mi Goreng 5S')"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 10 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card product-card bg-warning">
+              <img
+                src="https://www.indomie.com/uploads/product/indomie-mi-goreng-special-10s_thumb_174428072.png"
+                class="card-img-top"
+                alt="Product 10"
+              />
+              <div class="card-body">
+                <h5 style="overflow: hidden" class="poppins-bold">
+                  Indomie Mi Goreng 10S
+                </h5>
+                <button
+                  class="btn btn-danger poppins-bold text-white"
+                  onclick="openModal('Indomie Mi Goreng 10S')"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 11 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card product-card bg-warning">
+              <img
+                src="https://www.indomie.com/uploads/product/indomie-cup-mi-goreng_thumb_144714713.png"
+                class="card-img-top"
+                alt="Product 11"
+                style="max-width: 15re"
+              />
+              <div class="card-body">
+                <h5 class="card-title poppins-bold">Indomie Cup Mi Goreng</h5>
+                <button
+                  class="btn btn-danger poppins-bold text-white"
+                  onclick="openModal('Indomie Cup Mi Goreng')"
+                >
+                  Beli Sekarang
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Additional products... -->
+        </div>
+      </div>
+    </section>
+    <!-- Products Section (End) -->
+
+    <!-- Shared Modal for All Products -->
+    <div
+      class="modal fade"
+      id="buyModal"
+      tabindex="-1"
+      aria-labelledby="buyModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-danger">
+            <h5 class="modal-title" id="buyModalLabel">Beli Produk</h5>
+            <button
+              type="button"
+              class="btn-close pb-3"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              style="background: none; border: none"
+            >
+              <span>
+                <i data-feather="x" stroke-width="3"></i>
+              </span>
+            </button>
+          </div>
+          <div class="modal-body bg-warning">
+            <form id="buyForm">
+              <div class="form-group">
+                <label for="product-name" class="poppins-semibold"
+                  >Nama Produk</label
+                >
+                <input
+                  type="text"
+                  class="form-control poppins-regular"
+                  id="product-name"
+                  disabled
+                />
+              </div>
+              <div class="form-group">
+                <label for="name" class="poppins-semibold">Nama Anda</label>
+                <input
+                  type="text"
+                  class="form-control poppins-regular"
+                  id="name"
+                  placeholder="Masukkan nama anda"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email" class="poppins-semibold">Email</label>
+                <input
+                  type="email"
+                  class="form-control poppins-regular"
+                  id="email"
+                  placeholder="Masukkan email anda"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="address" class="poppins-semibold">Alamat</label>
+                <textarea
+                  class="form-control poppins-regular"
+                  id="address"
+                  rows="3"
+                  placeholder="Masukkan alamat anda"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary poppins-semibold mt-2"
+              >
+                Kirim
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer bg-success">
+            <button
+              type="button"
+              class="btn-close pb-2"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              style="background: none; border: none"
+            >
+              <span>
+                <i data-feather="x" stroke-width="3"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer (Start) -->
+    <footer
+      class="bg-warning text-dark py-4"
+      id="contact"
+      style="box-shadow: 0px -4px 5px rgba(0, 0, 0, 0.4)"
+    >
+      <div class="container">
+        <div class="row">
+          <!-- Contact Section -->
+          <div class="col-md-6 mb-3 mb-md-0">
+            <h5 class="poppins-bold">Contact Indomie</h5>
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-center mb-2">
+                <i data-feather="phone" class="footer-icon"></i>
+                <a
+                  href="tel:+628123456789"
+                  class="poppins-regular text-dark text-decoration-none"
+                  >+62 812-3456-789</a
+                >
+              </li>
+              <li class="d-flex align-items-center mb-2">
+                <i data-feather="mail" class="footer-icon"></i>
+                <a
+                  href="mailto:info@indomie.com"
+                  class="poppins-regular text-dark text-decoration-none"
+                  >info@indomie.com</a
+                >
+              </li>
+              <li class="d-flex align-items-center">
+                <i data-feather="map-pin" class="footer-icon"></i>
+                <span class="poppins-regular"
+                  >Jl. Indomie No. 123, Jakarta, Indonesia</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media Section -->
+          <div class="col-md-6 d-flex flex-column align-items-md-end">
+            <h5 class="poppins-bold">Follow Us</h5>
+            <div class="d-flex" z>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                class="social-icon me-3"
+              >
+                <i data-feather="facebook"></i>
+              </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                class="me-3 social-icon"
+              >
+                <i data-feather="twitter"></i>
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="me-3 social-icon"
+              >
+                <i data-feather="instagram"></i>
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                class="social-icon"
+              >
+                <i data-feather="linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer (End) -->
+
+    <!-- Bootstrap Javascript -->
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Javascript Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <script>
+      // Function to open modal and set product name
+      function openModal(productName) {
+        document.getElementById("product-name").value = productName;
+        $("#buyModal").modal("show");
+      }
+
+      // Handle form submission
+      document
+        .getElementById("buyForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("Pembelian berhasil!");
+          $("#buyModal").modal("hide");
+        });
+    </script>
+  </body>
+</html>
