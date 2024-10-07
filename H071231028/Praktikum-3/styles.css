@@ -1,0 +1,109 @@
+
+  @font-face {
+    font-family: 'Dream';
+    src: url('font/Funky\ Dream.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+
+  .navbar-custom {
+    background-color:#395067; 
+    padding-bottom: 0.1rem;
+    padding-top: 0.1rem;
+    max-width: 70;
+  }
+
+  .navbar-custom .container-fluid {
+    max-width: 380px; 
+    margin: 0 auto; 
+  }
+
+  .navbar-custom .nav-link {
+    color: #f8f9fa !important; 
+    font-weight: 500;
+    font-size: small;
+    text-transform: uppercase;
+  }
+  
+  .navbar-custom .nav-link:hover {
+    color: #ffc107 !important; 
+  }
+
+  .navbar-custom .nav-link.active {
+    color: #ffc107 !important; 
+  }
+
+  .navbar-brand img {
+    height: 60px;
+  }
+
+  .navbar-custom .navbar-toggler {
+    border-color: #ffc107;
+  }
+
+  .navbar-custom .navbar-toggler-icon {
+    background-color: #ffc107;
+  }
+
+
+.bi {
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+.hero {
+  padding-top: calc(100px + 2rem); 
+  height: 100vh;
+}
+
+
+#info {
+  background-color: #a2bed9;
+}
+
+
+#help {
+  background-color: #6a839c;
+  color: white;
+  padding: 2rem 0;
+}
+
+#help h1 {
+  margin-bottom: 1rem;
+}
+
+#help p {
+  margin-bottom: 1.5rem;
+}
+
+#help .btn-outline-light {
+  border-color: white;
+  color: white;
+}
+
+#help .btn-outline-light:hover {
+  background-color: white;
+  color: #343a40;
+}
+
+
+footer {
+  padding: 1rem 0;
+  background-color: #395067;
+  color: white;
+}
+
+
+#carousel {
+  background-color: #a2bed9;
+  color: #000000;
+  
+ 
+}
+
+h2 {
+  font-family: 'Dream';
+}
+
+
