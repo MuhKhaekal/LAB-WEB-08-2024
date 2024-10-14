@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Bet Area -->
+        <div id="bet-area">
+            <p>Select Your Bet:</p>
+            <img src="Bet/bet-5.png" class="bet-image" data-bet="5" alt="$5 Bet">
+            <img src="Bet/bet-10.png" class="bet-image" data-bet="10" alt="$10 Bet">
+            <img src="Bet/bet-50.png" class="bet-image" data-bet="50" alt="$50 Bet">
+            <img src="Bet/bet-100.png" class="bet-image" data-bet="100" alt="$100 Bet">
+            <img src="Bet/bet-500.png" class="bet-image" data-bet="500" alt="$500 Bet">
+            <p id="bet-display">Bet: $100</p>
+
+            <img src="bet/bet-5.png" class="reduce-bet-image" data-bet="5" alt="Reduce $5 Bet">
+            <img src="bet/bet-10.png" class="reduce-bet-image" data-bet="10" alt="Reduce $10 Bet">
+            <img src="bet/bet-50.png" class="reduce-bet-image" data-bet="50" alt="Reduce $50 Bet">
+            <img src="bet/bet-100.png" class="reduce-bet-image" data-bet="100" alt="Reduce $100 Bet">
+        </div>
+
+        <div class="halo">
+        <!-- Player's Hand -->
+        <div id="player-area">
+            <h2>Player's Hand</h2>
+            <div id="player-cards" class="card-area"></div>
+            <div id="player-score"></div>
+        </div>
+
+        <!-- Dealer's Hand -->
+        <div id="dealer-area">
+            <h2>Dealer's Hand</h2>
+            <div id="dealer-cards" class="card-area"></div>
+            <div id="dealer-score"></div>
+        </div>
+        </div>
+        <!-- Game Controls -->
+        <div id="controls">
+            <button id="deal-button">Deal Cards</button>
+            <button id="hit-button" disabled>Hit</button>
+            <button id="stay-button" disabled>Stand</button>
+        </div>
+
+        <div id="result"></div>
+
+        <div id="money-display">Money: $5000</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
