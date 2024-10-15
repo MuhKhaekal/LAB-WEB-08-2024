@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@font-face {
+    font-family: 'yo';
+        src: url('fotn/golwet-golwet-svg-400.otf') format('opentype');
+    }
+
+body {
+    background-image: url('back/Latarnya.jpg');
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+.container {
+    padding: 20px;
+}
+
+#bet-area {
+    margin-top: 100px;
+    color: #d2c1c1;
+    font-family: 'yo';
+    font-size: 50px;
+}
+.card-area {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.card-area img {
+    width: 100px;
+    margin: 0 10px;
+}
+#controls {
+    border-color: #a2c3b0;
+}
+
+button {
+    padding: 10px 10px;
+    width: 150px;
+    background-color: rgba(162, 195, 176, 0.5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.bet-image, .reduce-bet-image {
+    width: 80px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.bet-image:hover, .reduce-bet-image:hover {
+    transform: scale(1.1); 
+}
+
+#bet-display {
+    font-size: 20px;
+    color: #ffd700;
+    margin-top: 10px;
+}
+
+#money-display {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+#result {
+    font-size: 20px;
+    margin-top: 20px;
+    color: yellow;
+}
+
+@keyframes throwFromRight {
+    0% {
+        transform: translateX(1000px) rotate(30deg); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateX(0) rotate(0deg); 
+        opacity: 1; 
+    }
+}
+
+.new-card {
+    animation: throwFromRight 0.7s ease-out; 
+}
+
+img {
+    position: relative;
+}
+
+.halo {
+    color: #d2c1c1;
+    font-family: 'cinzel';
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#money-display {
+    color: #ffd700;
+}
