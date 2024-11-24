@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    /* Your custom base styles */
+    @font-face {
+        font-family: 'Pricedown';
+        font-style: normal;
+        font-weight: normal;
+        src: url(/font/pricedown\ bl.otf),format('opentype');
+    }
+
+    @font-face {
+        font-family: 'House Script';
+        font-style: normal;
+        font-weight: normal;
+        src: url(/font/SignPainterHouseScriptRegular.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Chalet1960';
+        font-style: normal;
+        font-weight: normal;
+        src: url(/font/ChaletNineteenSixtyRegular.otf) format('opentype');
+    }
+}
